@@ -10,6 +10,10 @@
       Built with <a href="https://www.getzola.org" rel="noreferrer" target="_blank">zola</a> and <a href="https://github.com/isunjn/serene" rel="noreferrer" target="_blank">serene</a>
       {% endif %}
     </div>
+    {% if config.extra.carbon_badge is defined and config.extra.carbon_badge %}
+    <div id="wcb" class="carbonbadge{% if config.extra.force_theme == 'dark' %} wcb-d{% endif %}"></div>
+    <script src="https://unpkg.com/website-carbon-badges@latest/b.min.js" defer></script>
+    {% endif %}
   </div>
 
   <div class="right">

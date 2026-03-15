@@ -1306,6 +1306,38 @@ footer {
       line-height: 0;
     }
   }
+
+  #wcb.carbonbadge {
+    --b1: var(--primary-color);
+    --b2: var(--primary-color);
+    font-size: 0.85em;
+    line-height: 1.15;
+
+    #wcb_g {
+      background: var(--bg-color);
+      color: var(--text-pale-color);
+      border-color: var(--text-decoration-color);
+    }
+
+    #wcb_a {
+      background: var(--primary-color);
+      color: var(--bg-color);
+      border-color: var(--primary-color);
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+
+    #wcb_2 {
+      color: var(--text-pale-color);
+    }
+
+    &.wcb-d #wcb_a {
+      background: var(--primary-color);
+      color: var(--bg-color);
+      border-color: var(--primary-color);
+    }
+  }
 }
 
 /* blog page

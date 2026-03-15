@@ -8,6 +8,12 @@ function enableThemeToggle() {
     if (hlLink) hlLink.href = `/giallo-${theme}.css`;
     sessionStorage.setItem("theme", theme);
     toggleGiscusTheme(theme);
+    toggleCarbonBadgeTheme(theme);
+  }
+  function toggleCarbonBadgeTheme(theme) {
+    const wcb = document.querySelector('#wcb');
+    if (!wcb) return;
+    if (theme == "dark") wcb.classList.add('wcb-d'); else wcb.classList.remove('wcb-d');
   }
   function toggleGiscusTheme(theme) {
     const iframe = document.querySelector('iframe.giscus-frame');
